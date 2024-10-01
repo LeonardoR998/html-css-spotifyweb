@@ -1,0 +1,51 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* # UTILS */
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ************************************ */
+
+.top {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: grey;
+}
+
+.nav-bar {
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+
+  background-color: #000000;
+}
+
+.main-section {
+  flex-direction: column;
+  width: calc(100% - 200px);
+
+  background-color: grey;
+}
+
+.footer-app {
+  width: 100%;
+  height: 100px;
+  background-color: #282828;
+}
+
+.header-app {
+  height: 80px;
+  width: 100%;
+  background-color: #0c0f14;
+}
