@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* STRUCT. */
 
 .nav-bar {
@@ -86,26 +90,29 @@ img {
 }
 
 .profile-logo {
-  background-color: lightgray;
+  background-color: #717171;
   border-radius: 50%;
 }
 
 .name-item {
-  color: white;
   display: none;
+  color: #717171;
 }
 
 .name-playlist {
+  margin-top: 20px;
+  color: #717171;
   display: none;
-  color: white;
 }
 
-.fa-sharp-duotone,
-.fa-solid,
-.fa-plus {
-  font-size: 40px;
-  background-color: gray;
+.name-pl-header {
   display: none;
+}
+
+.title-playlist {
+  display: none;
+  font-size: 20px;
+  color: white;
 }
 
 /* MQ */
@@ -113,11 +120,6 @@ img {
 @media screen and (min-width: 576px) {
   .nav-bar {
     width: 200px;
-  }
-
-  .name-item {
-    display: inline;
-    font-size: 20px;
   }
 
   .logo {
@@ -129,9 +131,26 @@ img {
     margin-bottom: 10px;
   }
 
-  .fa-sharp-duotone,
-  .fa-solid,
-  .fa-plus {
+  .name-item {
+    display: inline;
+  }
+
+  .name-playlist {
     display: block;
+    margin-left: 10px;
+  }
+
+  .name-pl-header {
+    display: inline;
+    margin-top: 20px;
+  }
+
+  .img-logo {
+    margin-left: 10px;
+  }
+
+  .title-playlist {
+    display: inline;
+    margin-left: 10px;
   }
 }
