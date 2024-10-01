@@ -13,10 +13,16 @@
   height: calc(100vh - 120px);
 }
 
+img {
+  max-width: 100%;
+}
+
+/* STRUCT. */
+
 .nav-bar {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 50px;
   height: 100%;
 
   background-color: black;
@@ -25,7 +31,7 @@
 .main-section {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 200px);
+  width: calc(100% - 50px);
 }
 
 .header-app {
@@ -47,4 +53,18 @@
   width: 100%;
 
   background-color: #2e2e2e;
+}
+
+/* NAV */
+
+.nav-bar {
+  display: flex;
+}
+
+/* MQ */
+
+@media screen and (min-width: 576px) {
+  .nav-bar {
+    width: 200px;
+  }
 }
