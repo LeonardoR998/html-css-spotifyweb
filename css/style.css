@@ -59,6 +59,53 @@ img {
 
 .nav-bar {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav {
+  margin-top: 10px;
+}
+
+.img-logo {
+  width: 25px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo-big {
+  display: none;
+}
+
+.footer-sidebar {
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-logo {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.name-item {
+  color: white;
+  display: none;
+}
+
+.name-playlist {
+  display: none;
+  color: white;
+}
+
+.fa-sharp-duotone,
+.fa-solid,
+.fa-plus {
+  font-size: 40px;
+  background-color: gray;
+  display: none;
 }
 
 /* MQ */
@@ -66,5 +113,25 @@ img {
 @media screen and (min-width: 576px) {
   .nav-bar {
     width: 200px;
+  }
+
+  .name-item {
+    display: inline;
+    font-size: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-big {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .fa-sharp-duotone,
+  .fa-solid,
+  .fa-plus {
+    display: block;
   }
 }

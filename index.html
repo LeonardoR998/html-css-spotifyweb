@@ -3,31 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spotify Web</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="./logo-boolean.ico" />
   </head>
   <body>
     <div class="container">
       <div class="nav-bar">
-        <div class="logo">
-          <img class="img-logo" src="./img/img/logo-small.svg" alt="logo" />
+        <div class="logo-nav">
+          <img
+            class="logo img-logo"
+            src="./img/img/logo-small.svg"
+            alt="logo"
+          />
+
+          <img class="logo-big" src="./img/img/logo.svg" alt="" />
+
+          <ul class="nav-item">
+            <li>
+              <img class="img-logo" src="./img/img/home.svg" alt="" />
+              <span class="name-item">Home</span>
+            </li>
+            <li>
+              <img class="img-logo" src="./img/img/search.svg" alt="" />
+              <span class="name-item">Cerca</span>
+            </li>
+            <li>
+              <img class="img-logo" src="./img/img/libreria.svg" alt="" />
+              <span class="name-item">La tua libreria</span>
+            </li>
+          </ul>
         </div>
-        <ul class="nav-item">
-          <li>
-            <img src="./img/img/home.svg" alt="" />
-          </li>
-          <li>
-            <img src="./img/img/search.svg" alt="" />
-          </li>
-          <li>
-            <img src="./img/img/libreria.svg" alt="" />
-          </li>
-        </ul>
+
+        <div class="playlist-box">
+          <h1 class="title-playlist">Playlist</h1>
+
+          <div class="main-playlist">
+            <ul>
+              <li>
+                <i class="fa-sharp-duotone fa-solid fa-plus"></i>
+                <span class="name-playlist">Crea Playlist</span>
+              </li>
+              <li class="name-playlist">Nome Playlist</li>
+              <li class="name-playlist">Nome Playlist</li>
+              <li class="name-playlist">Nome Playlist</li>
+              <li class="name-playlist">Nome Playlist</li>
+              <li class="name-playlist">Nome Playlist</li>
+              <li class="name-playlist">Nome Playlist</li>
+              <li class="name-playlist">Nome Playlist</li>
+            </ul>
+          </div>
+        </div>
 
         <div class="footer-sidebar">
-          <img src="./img/img/download.svg" alt="" />
-          <img src="./img/img/profile.svg" alt="" />
+          <img class="img-logo" src="./img/img/download.svg" alt="" />
+          <img
+            class="profile-logo img-logo"
+            src="./img/img/profile.svg"
+            alt=""
+          />
         </div>
       </div>
 
