@@ -20,63 +20,120 @@
     <div class="container">
       <div class="nav-bar">
         <div class="logo-nav">
-          <img
-            class="logo img-logo"
-            src="./img/img/logo-small.svg"
-            alt="logo"
-          />
+          <img src="./img/img/logo-small.svg" class="d-sm-none" alt="" />
+          <img src="./img/img/logo.svg" class="d-none d-sm-block" alt="" />
+        </div>
+        <nav class="links-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <img class="icon" src="./img/img/home.svg" alt="" />
+                <span class="d-none d-sm-inline">Home</span>
+              </a>
+            </li>
 
-          <img class="logo-big" src="./img/img/logo.svg" alt="" />
+            <li>
+              <a href="#">
+                <img class="icon" src="./img/img/search.svg" alt="" />
+                <span class="d-none d-sm-inline">Cerca</span>
+              </a>
+            </li>
 
-          <ul class="nav-item">
             <li>
-              <img class="img-logo" src="./img/img/home.svg" alt="" />
-              <span class="name-item">Home</span>
+              <a href="#">
+                <img class="icon" src="./img/img/libreria.svg" alt="" />
+                <span class="d-none d-sm-inline">La tua libreria</span>
+              </a>
             </li>
-            <li>
-              <img class="img-logo" src="./img/img/search.svg" alt="" />
-              <span class="name-item">Cerca</span>
-            </li>
-            <li>
-              <img class="img-logo" src="./img/img/libreria.svg" alt="" />
-              <span class="name-item">La tua libreria</span>
-            </li>
-            <li class="name-pl-header">
-              <h3 class="title-playlist">Playlist</h3>
-            </li>
-            <li class="name-playlist">
-              <i class="fa-solid fa-square-plus" style="color: #c0c0c0"
-                ><span class="name-plus">Crea una playlist</span></i
-              >
-            </li>
-            <li class="name-playlist">Nome Playlist</li>
-            <li class="name-playlist">Nome Playlist</li>
-            <li class="name-playlist">Nome Playlist</li>
-            <li class="name-playlist">Nome Playlist</li>
-            <li class="name-playlist">Nome Playlist</li>
-            <li class="name-playlist">Nome Playlist</li>
-            <li class="name-playlist">Nome Playlist</li>
+          </ul>
+        </nav>
+        <div class="playlist-bt d-none d-sm-block">
+          <h3>Playlist</h3>
+          <button class="button-playlist">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <span class="add-playlist">Crea playlist</span>
+        </div>
+        <div class="playlist d-none d-sm-block">
+          <ul>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
           </ul>
         </div>
 
-        <div class="footer-sidebar">
-          <img class="img-logo" src="./img/img/download.svg" alt="" />
-          <img
-            class="profile-logo img-logo"
-            src="./img/img/profile.svg"
-            alt=""
-          />
+        <div class="footer-nav">
+          <div class="nav-download">
+            <img src="./img/img/download.svg" alt="" />
+
+            <span class="download-text d-none d-sm-inline">Installa app</span>
+          </div>
+          <div class="nav-user">
+            <div class="user-container">
+              <img src="./img/img/profile.svg" alt="" />
+            </div>
+            <span class="profile-text d-none d-sm-inline">John Doe</span>
+          </div>
         </div>
       </div>
 
       <div class="main-section">
-        <div class="header-app"></div>
+        <div class="header-app">
+          <button class="header-button">Effettua l'upgrade</button>
+        </div>
         <div class="main-content"></div>
       </div>
     </div>
 
-    <footer>
-      <div class="footer"></div>
+    <footer class="footer">
+      <!-- <div class="button-player-co">
+        <button>
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-forward"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div> -->
+
+      <div class="progress-bar-co">
+        <div class="button-player-co">
+          <button>
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-repeat"></i>
+          </button>
+        </div>
+
+        <span class="current-time">0:25</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <span class="total-time">4:35</span>
+      </div>
     </footer>
   </body>
 </html>
