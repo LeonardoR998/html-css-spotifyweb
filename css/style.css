@@ -96,6 +96,7 @@ span {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -216,6 +217,7 @@ span {
 
 .button-player-co {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -223,13 +225,6 @@ span {
 
 .progress-bar-co {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.progress-bar-co > .button-player-co {
-  display: flex;
-  flex-direction: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -257,6 +252,23 @@ span {
 .progress-bar-co .current-time,
 .progress-bar-co .total-time {
   color: white;
+}
+
+.button-player-co .player-item {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.bar-button-co {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* HOVER */
