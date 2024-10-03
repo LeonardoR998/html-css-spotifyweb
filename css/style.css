@@ -89,12 +89,18 @@ span {
 
 .main-content {
   display: flex;
+  justify-content: center;
   flex: 1 1 100%;
 
   background-color: #1c1c2c;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
   height: 120px;
   width: 100%;
 
@@ -208,15 +214,18 @@ span {
   width: 100%;
 }
 
-/* FOOTER */
+/* MAIN CONTENT  */
 
-.button-player-co {
+.main-content .upper-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 10px;
+
+  color: gray;
 }
+
+/* FOOTER */
 
 .progress-bar-co {
   display: flex;
@@ -249,53 +258,54 @@ span {
   color: white;
 }
 
-.button-player-co .player-item {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  border: none;
-}
-
-.bar-button-co {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.bar-button-co > .progress-bar {
+.footer .song-footer,
+.footer .player-item {
   flex-grow: 1;
-  max-width: 100px;
-  min-width: 50px;
-
-  height: 4px;
-  border-radius: 2px;
-  background-color: gray;
-}
-
-.bar-button-co .player-item {
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  border: none;
-}
-
-.image-player-co {
   display: flex;
-  justify-content: flex-start;
+}
+
+.footer .player-bar {
+  flex-grow: 3;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.footer .song-container {
+  width: 70px;
+  height: 70px;
   align-items: center;
 }
 
-.img-player {
-  max-width: 100px;
-  min-width: 50px;
+.footer .song-text {
+  align-items: center;
+  line-height: 30px;
+  color: white;
+  margin-left: 10px;
+}
+.footer .song-icons {
+  align-items: center;
+  line-height: 60px;
+  color: white;
+  margin-left: 10px;
+}
+
+.footer .song-container,
+.footer .player-item,
+.footer .player-bar {
+  height: 100%;
+}
+
+.footer .player-item {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .player-bar .icons-co {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
 
 /* HOVER */
