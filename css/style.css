@@ -30,9 +30,14 @@ li {
   color: gray;
 }
 
-h3 {
+h3,
+h1 {
   color: white;
   margin-bottom: 10px;
+}
+
+h5 {
+  color: gray;
 }
 
 span {
@@ -89,8 +94,10 @@ span {
 
 .main-content {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   flex: 1 1 100%;
+  gap: 1rem;
 
   background-color: #1c1c2c;
 }
@@ -216,13 +223,14 @@ span {
 
 /* MAIN CONTENT  */
 
-.main-content .upper-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 10px;
+.main-section .card-playlist > img {
+  width: 200px;
+  height: 200px;
+}
 
-  color: gray;
+.main-content .card-playlist {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 /* FOOTER */
